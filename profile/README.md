@@ -1,3 +1,5 @@
+### ✨ [Meet Flyte at Hacktoberfest 2021!](https://blog.flyte.org/meet-flyte-at-hacktoberfest-2021) ✨
+
 ![Flyte Image](https://user-images.githubusercontent.com/27777173/134286401-fd10814d-42f8-4286-b1e0-aa7b8400b1e7.jpg)
 
 <html>
