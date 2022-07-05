@@ -1,37 +1,21 @@
-![Flyte Image](https://raw.githubusercontent.com/flyteorg/static-resources/main/common/flyte_cover.jpg)
+![Flyte Image](https://user-images.githubusercontent.com/27777173/134286401-fd10814d-42f8-4286-b1e0-aa7b8400b1e7.jpg)
 
 <html>
   <p align="center">
    <h3>
-    <a href="https://flyte.org">Website</a>
-    <span> · </span>
-    <a href="https://docs.flyte.org/">Documentation</a>
-    <span> · </span>
-    <a href="https://blog.flyte.org/">Blog</a>
-    <span> · </span>
-    <a href="https://www.youtube.com/channel/UCNduEoLOToNo3nFVly-vUTQ/playlists">YouTube</a>
-    <span> · </span>
-    <a href="https://www.getrevue.co/profile/flyte">Newsletter</a>
+    Flyte is a workflow automation platform for complex, mission-critical data and ML processes at scale 
    </h3>
   </p>
 </html>
 
-<html>
-  <p align="center">
-   <h3>
-    Flyte is a workflow automation platform for complex, mission-critical data and ML processes at scale
-   </h3>
-  </p>
-</html>
-
-We at Flyte are constantly striving to make MLOps better by providing off-the-shelf orchestration mechanisms to automate the way you build pipelines.
+We at Flyte are constantly striving to make MLOps better by providing off-the-shelf orchestration mechanisms to automate the way you build pipelines. Ours is a **Kubernetes-native** and **type-safe** platform—which we are super proud of!
 
 #### 5️⃣ Reasons to Use Flyte
 
 - Kubernetes-Native Workflow Automation Platform
-- Ergonomic SDKs in Python, Java, and Scala
+- Ergonomic SDK's in Python, Java & Scala
 - Versioned & Auditable
 - Reproducible Pipelines
 - Strong Data Typing
 
-Show us some ❤️ by starring our [repository](https://github.com/flyteorg/flyte)!
+Explore our GitHub repos and give us a star ⭐️ [here](https://github.com/flyteorg/flyte) if you like what you see 👀. Our [getting started guide](https://docs.flyte.org/en/latest/getting_started.html) should further intrigue you 🧐.
