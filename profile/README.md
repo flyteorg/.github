@@ -1,33 +1,53 @@
 ![Flyte Image](https://raw.githubusercontent.com/flyteorg/static-resources/main/common/flyte_cover.jpg)
 
-<html>
-  <h3 align="center">
+<h3 align="center">
   <a href="https://flyte.org">Website</a>
   <span> · </span>
   <a href="https://docs.flyte.org/">Documentation</a>
   <span> · </span>
   <a href="https://blog.flyte.org/">Blog</a>
   <span> · </span>
-  <a href="https://www.youtube.com/channel/UCNduEoLOToNo3nFVly-vUTQ/playlists">YouTube</a>
+  <a href="https://slack.flyte.org/">Slack</a>
   <span> · </span>
-  <a href="https://www.getrevue.co/profile/flyte">Newsletter</a>
-  </h3>
-</html>
+  <a href="https://www.youtube.com/channel/UCNduEoLOToNo3nFVly-vUTQ/playlists">YouTube</a>
+</h3>
 
-<html>
-  <h3 align="center">
-  Flyte is a workflow automation platform for complex, mission-critical data and ML processes at scale
-  </h3>
-</html>
+<h3 align="center">
+  Flyte 2 is the open-source AI runtime to scale durable workflows to production — on your own infra.
+</h3>
 
-We at Flyte are constantly striving to make MLOps better by providing off-the-shelf orchestration mechanisms to automate the way you build pipelines.
+Write plain, async-native Python that orchestrates agents, data and ML pipelines, and inference — with the durability, reproducibility, and observability that production demands.
 
-#### 5️⃣ Reasons to Use Flyte
+#### Why Flyte 2
 
-- Kubernetes-Native Workflow Automation Platform
-- Ergonomic SDKs in Python, Java, and Scala
-- Versioned & Auditable
-- Reproducible Pipelines
-- Strong Data Typing
+- **🤖 Dynamic, agent-native execution** — Write or generate orchestration logic that adapts on the fly at runtime. Loops, conditionals, fan-outs, and LLM-driven control flow are just Python.
+- **🛡️ Durable, self-healing workflows** — Flyte 2 is infrastructure-aware, automatically recovering from both logic and infrastructure failures like OOM crashes. Every execution is logged, reproducible, and observable from a single UI.
+- **⚡ Realtime and batch inference** — Flyte 2 handles inference natively, no separate serving stack required.
 
-Show us some ❤️ by starring our [repository](https://github.com/flyteorg/flyte)!
+#### Architecture — where the code lives
+
+| Repository | What it is |
+| --- | --- |
+| [flyteorg/flyte](https://github.com/flyteorg/flyte/tree/main) | The Flyte 2 control plane and backend live on `main` — scheduling, state, recovery, and the console. |
+| [flyteorg/flyte-sdk](https://github.com/flyteorg/flyte-sdk) | The Python SDK — pure Python with async/await. `pip install flyte` |
+| [flyteorg/flyte-sdk-go](https://github.com/flyteorg/flyte-sdk-go) | The Go SDK — interface with Flyte from other languages. |
+
+#### Get started
+
+```python
+# pip install flyte
+import flyte
+
+env = flyte.TaskEnvironment(name="hello")
+
+@env.task
+async def hello(name: str) -> str:
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    flyte.init_from_config()
+    run = flyte.run(hello, name="world")
+    print(run.url)
+```
+
+Show us some ❤️ by starring [flyteorg/flyte](https://github.com/flyteorg/flyte)!
