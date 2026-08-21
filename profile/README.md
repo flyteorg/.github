@@ -30,7 +30,8 @@ Write plain, async-native Python that orchestrates agents, data and ML pipelines
 | --- | --- |
 | [flyteorg/flyte](https://github.com/flyteorg/flyte/tree/main) | The Flyte 2 control plane and backend live on `main` — scheduling, state, recovery, and the console. |
 | [flyteorg/flyte-sdk](https://github.com/flyteorg/flyte-sdk) | The Python SDK — pure Python with async/await. `pip install flyte` |
-| [flyteorg/flyte-sdk-go](https://github.com/flyteorg/flyte-sdk-go) | The Go SDK — interface with Flyte from other languages. |
+| [flyteorg/flyte-sdk-go](https://github.com/flyteorg/flyte-sdk-go) | The Go SDK — interface with Flyte for Golang. |
+| [flyteorg/flyte-sdk-rs](https://github.com/flyteorg/flyte-sdk-rs) | The Rust SDK — interface with Flyte from Rust. |
 
 #### Get started
 
